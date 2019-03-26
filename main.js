@@ -8,7 +8,7 @@ LocalNotify.onReceivedMessage = function(payload) {
 };
 
 function sendLater() {
-    LocalNotify.later(4, "드디어!", "4초는 정말 기네요.", "그렇죠?", true);
+    LocalNotify.later(4, "드디어!", "Dream-Plus Push alarm success.", "그렇죠?", true);
 }
 
 function sendNow() {
