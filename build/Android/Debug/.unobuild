@@ -1,0 +1,4 @@
+$: 498637815
+BuildCommand: "bash build.sh"
+RunCommand: "bash run.sh"
+Product: DreamPlus-popup.apk

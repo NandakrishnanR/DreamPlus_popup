@@ -1,0 +1,14 @@
+<App>
+    <JavaScript File="main.js" />
+
+    <DockPanel>
+        <TopFrameBackground DockPanel.Dock="Top" />
+        <ScrollView>
+            <StackPanel>
+                <Button Clicked="{sendNow}" Text="Send notification now2" Height="60"/>
+                <Button Clicked="{sendLater}" Text="누르면 4초후 알림" Height="60"/>
+            </StackPanel>
+        </ScrollView>
+        <BottomBarBackground DockPanel.Dock="Bottom" />
+    </DockPanel>
+</App>
