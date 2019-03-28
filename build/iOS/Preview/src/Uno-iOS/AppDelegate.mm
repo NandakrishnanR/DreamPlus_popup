@@ -69,33 +69,33 @@
 }
 
 //#if #(AppDelegate.PushNotificationMethods:Defined)
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
-{
-    id cxt = _unoContext;
-    if ([cxt respondsToSelector:@selector(application:didRegisterForRemoteNotificationsWithDeviceToken:)])
-        [cxt application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
-}
-
-- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
-{
-    id cxt = _unoContext;
-    if ([cxt respondsToSelector:@selector(application:didFailToRegisterForRemoteNotificationsWithError:)])
-        [cxt application:application didFailToRegisterForRemoteNotificationsWithError:error];
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
-{
-    id cxt = _unoContext;
-    if ([cxt respondsToSelector:@selector(application:didReceiveRemoteNotification:)])
-        [cxt application:application didReceiveRemoteNotification:userInfo];
-}
-
-- (void)application:(UIApplication *)application dispatchPushNotification:(NSDictionary *)userInfo fromBar:(BOOL)fromBar
-{
-    id cxt = _unoContext;
-    if ([cxt respondsToSelector:@selector(application:dispatchPushNotification:fromBar:)])
-        [cxt application:application dispatchPushNotification:userInfo fromBar:fromBar];
-}
+//- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+//{
+//    id cxt = _unoContext;
+//    if ([cxt respondsToSelector:#selector(application:didRegisterForRemoteNotificationsWithDeviceToken:)])
+//        [cxt application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+//}
+//
+//- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+//{
+//    id cxt = _unoContext;
+//    if ([cxt respondsToSelector:#selector(application:didFailToRegisterForRemoteNotificationsWithError:)])
+//        [cxt application:application didFailToRegisterForRemoteNotificationsWithError:error];
+//}
+//
+//- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+//{
+//    id cxt = _unoContext;
+//    if ([cxt respondsToSelector:#selector(application:didReceiveRemoteNotification:)])
+//        [cxt application:application didReceiveRemoteNotification:userInfo];
+//}
+//
+//- (void)application:(UIApplication *)application dispatchPushNotification:(NSDictionary *)userInfo fromBar:(BOOL)fromBar
+//{
+//    id cxt = _unoContext;
+//    if ([cxt respondsToSelector:#selector(application:dispatchPushNotification:fromBar:)])
+//        [cxt application:application dispatchPushNotification:userInfo fromBar:fromBar];
+//}
 //#endif
 
 //#if #(AppDelegate.LocalNotificationMethods:Defined)

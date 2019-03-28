@@ -8,7 +8,6 @@
 namespace g{namespace Fuse{namespace Drawing{struct BrushConverter;}}}
 namespace g{namespace Fuse{namespace FileSystem{struct FileSystemModule;}}}
 namespace g{namespace Fuse{namespace LocalNotifications{struct LocalNotify;}}}
-namespace g{namespace Fuse{namespace PushNotifications{struct Push;}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct DiagnosticsImplModule;}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct Http;}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct TimerModule;}}}}
@@ -26,6 +25,8 @@ namespace g{namespace FuseJS{struct Lifecycle;}}
 namespace g{namespace FuseJS{struct UserEvents;}}
 namespace g{namespace Polyfills{namespace Window{struct WindowModule;}}}
 namespace g{namespace Uno{namespace UX{struct NameTable;}}}
+namespace g{namespace Uno{namespace UX{struct Property1;}}}
+namespace g{namespace Uno{namespace UX{struct Selector;}}}
 namespace g{struct MainView;}
 
 namespace g{
@@ -39,6 +40,7 @@ void MainView__New2_fn(MainView** __retval);
 
 struct MainView : ::g::Fuse::App
 {
+    uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb0;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb1;
     uStrong< ::g::Uno::UX::NameTable*> __g_nametable1;
@@ -53,7 +55,6 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::FileSystem::FileSystemModule*> FuseFileSystemFileSystemModule;
     uStrong< ::g::Fuse::Storage::StorageModule*> FuseStorageStorageModule;
     uStrong< ::g::Fuse::WebSocket::WebSocketClientModule*> FuseWebSocketWebSocketClientModule;
-    uStrong< ::g::Fuse::PushNotifications::Push*> FusePushNotificationsPush;
     uStrong< ::g::Fuse::LocalNotifications::LocalNotify*> FuseLocalNotificationsLocalNotify;
     uStrong< ::g::Polyfills::Window::WindowModule*> PolyfillsWindowWindowModule;
     uStrong< ::g::FuseJS::Globals*> FuseJSGlobals;
@@ -63,6 +64,8 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::FuseJS::Bundle*> FuseJSBundle;
     uStrong< ::g::FuseJS::FileReaderImpl*> FuseJSFileReaderImpl;
     uStrong< ::g::FuseJS::UserEvents*> FuseJSUserEvents;
+    static ::g::Uno::UX::Selector __selector0_;
+    static ::g::Uno::UX::Selector& __selector0() { return MainView_typeof()->Init(), __selector0_; }
 
     void ctor_4();
     void InitializeUX();

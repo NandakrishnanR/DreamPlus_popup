@@ -4,7 +4,6 @@
 #include <Uno.Platform.CoreApp.h>
 #include <Uno.Platform.iOS.Application.h>
 #include <Uno.Platform.EventSources.InterAppInvoke.h>
-#include <iOS/AppDelegatePushNotify.h>
 #include <iOS/AppDelegateLocalNotify.h>
 
 @interface uContext()
@@ -134,7 +133,6 @@ static uContext* instance = nil;
 - (void)applicationDidFinishLaunching:(NSNotification*)notification
 {
     [&]() -> void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::EnterForeground(); }();
-    [self application:[notification object] initializePushNotifications:[notification userInfo]];
     [self initializeLocalNotifications:[notification object]];
 }
 

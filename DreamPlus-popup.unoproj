@@ -3,14 +3,8 @@
   "Packages": [
     "Fuse",
     "FuseJS",
-    "Fuse.PushNotifications",
     "Fuse.LocalNotifications"
   ],
-  "iOS": {
-    "PushNotifications": {
-        "RegisterOnLaunch": false
-    }
-},
   "Includes": [
     "*"
   ]

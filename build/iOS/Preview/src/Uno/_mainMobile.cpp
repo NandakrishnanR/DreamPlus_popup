@@ -44,6 +44,7 @@ namespace g{uClassType* FuseScriptingJavaScript_bundle_typeof();}
 namespace g{uClassType* FuseText_bundle_typeof();}
 namespace g{uClassType* UnoCore_bundle_typeof();}
 namespace g{uClassType* DreamPluspopup_bundle_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* DreamPluspopup_FuseControlsTextInputControl_Value_Property_typeof();}
 namespace g{namespace Fuse{struct AppBase_type;} ::g::Fuse::AppBase_type* MainView_typeof();}
 namespace g{namespace OpenGL{uClassType* GL_typeof();}}
 namespace g{namespace OpenGL{uEnumType* GLBlendEquation_typeof();}}
@@ -2450,9 +2451,6 @@ namespace g{namespace Fuse{namespace WebSocket{struct NativeFunctionModule_type;
 namespace g{namespace Fuse{namespace WebSocket{uType* WebSocketClient_typeof();}}}
 namespace g{namespace Fuse{namespace WebSocket{struct NativeFunctionModule_type; ::g::Fuse::WebSocket::NativeFunctionModule_type* WebSocketClientModule_typeof();}}}
 namespace g{namespace Fuse{namespace Scripting{struct NativeModule_type;}} namespace Fuse{namespace WebSocket{::g::Fuse::Scripting::NativeModule_type* WebSocketClientWrapper_typeof();}}}
-namespace g{namespace Fuse{namespace PushNotifications{uType* iOSImpl_typeof();}}}
-namespace g{namespace Fuse{namespace PushNotifications{uClassType* PushNotify_typeof();}}}
-namespace g{namespace Fuse{namespace Scripting{struct NativeModule_type;}} namespace Fuse{namespace PushNotifications{::g::Fuse::Scripting::NativeModule_type* Push_typeof();}}}
 namespace g{namespace Fuse{namespace LocalNotifications{uClassType* iOSImpl_typeof();}}}
 namespace g{namespace Fuse{namespace LocalNotifications{uClassType* Notify_typeof();}}}
 namespace g{namespace Fuse{namespace Scripting{struct NativeModule_type;}} namespace Fuse{namespace LocalNotifications{::g::Fuse::Scripting::NativeModule_type* LocalNotify_typeof();}}}
@@ -2694,6 +2692,7 @@ void uInitRtti()
         (uType*(*)())&::g::FuseText_bundle_typeof,
         (uType*(*)())&::g::UnoCore_bundle_typeof,
         (uType*(*)())&::g::DreamPluspopup_bundle_typeof,
+        (uType*(*)())&::g::DreamPluspopup_FuseControlsTextInputControl_Value_Property_typeof,
         (uType*(*)())&::g::MainView_typeof,
         (uType*(*)())&::g::OpenGL::GL_typeof,
         (uType*(*)())&::g::OpenGL::GLBlendEquation_typeof,
@@ -5100,9 +5099,6 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::WebSocket::WebSocketClient_typeof,
         (uType*(*)())&::g::Fuse::WebSocket::WebSocketClientModule_typeof,
         (uType*(*)())&::g::Fuse::WebSocket::WebSocketClientWrapper_typeof,
-        (uType*(*)())&::g::Fuse::PushNotifications::iOSImpl_typeof,
-        (uType*(*)())&::g::Fuse::PushNotifications::PushNotify_typeof,
-        (uType*(*)())&::g::Fuse::PushNotifications::Push_typeof,
         (uType*(*)())&::g::Fuse::LocalNotifications::iOSImpl_typeof,
         (uType*(*)())&::g::Fuse::LocalNotifications::Notify_typeof,
         (uType*(*)())&::g::Fuse::LocalNotifications::LocalNotify_typeof,

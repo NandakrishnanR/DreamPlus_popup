@@ -25,7 +25,6 @@ void NativeEventEmitterModule__ctor_2_fn(NativeEventEmitterModule* __this, bool*
 void NativeEventEmitterModule__CreateExportsObject_fn(NativeEventEmitterModule* __this, ::g::Fuse::Scripting::Context* c, uObject** __retval);
 void NativeEventEmitterModule__Dispatch_fn(NativeEventEmitterModule* __this, uDelegate* action, bool* alwaysQueueEventBeforeInit);
 void NativeEventEmitterModule__Emit_fn(NativeEventEmitterModule* __this, uArray* args);
-void NativeEventEmitterModule__EmitError_fn(NativeEventEmitterModule* __this, uString* reason);
 void NativeEventEmitterModule__New2_fn(bool* queueEventsBeforeInit, uArray* eventNames, NativeEventEmitterModule** __retval);
 void NativeEventEmitterModule__On_fn(NativeEventEmitterModule* __this, uObject* eventName, uDelegate* listener);
 void NativeEventEmitterModule__On1_fn(NativeEventEmitterModule* __this, uObject* eventName, ::g::Fuse::Scripting::NativeEvent* nativeEvent);
@@ -47,7 +46,6 @@ struct NativeEventEmitterModule : ::g::Fuse::Scripting::NativeModule
     void ctor_2(bool queueEventsBeforeInit, uArray* eventNames);
     void Dispatch(uDelegate* action, bool alwaysQueueEventBeforeInit);
     void Emit(uArray* args);
-    void EmitError(uString* reason);
     void On(uObject* eventName, uDelegate* listener);
     void On1(uObject* eventName, ::g::Fuse::Scripting::NativeEvent* nativeEvent);
     void OnAppInitialized(::g::Fuse::Scripting::Context* c);

@@ -4087,12 +4087,6 @@ void NativeEventEmitterModule__Emit_fn(NativeEventEmitterModule* __this, uArray*
     __this->Emit(args);
 }
 
-// protected void EmitError(string reason) :110
-void NativeEventEmitterModule__EmitError_fn(NativeEventEmitterModule* __this, uString* reason)
-{
-    __this->EmitError(reason);
-}
-
 // public NativeEventEmitterModule New(bool queueEventsBeforeInit, object[] eventNames) :25
 void NativeEventEmitterModule__New2_fn(bool* queueEventsBeforeInit, uArray* eventNames, NativeEventEmitterModule** __retval)
 {
@@ -4186,13 +4180,6 @@ void NativeEventEmitterModule::Emit(uArray* args)
 {
     uStackFrame __("Fuse.Scripting.NativeEventEmitterModule", "Emit(object[])");
     Dispatch(uDelegate::New(::g::Uno::Action2_typeof()->MakeType(::g::Fuse::Scripting::Context_typeof(), ::TYPES[17/*Fuse.Scripting.Object*/], NULL), (void*)NativeEventEmitterModule__EmitClosure__Emit_fn, NativeEventEmitterModule__EmitClosure::New1(args)), false);
-}
-
-// protected void EmitError(string reason) [instance] :110
-void NativeEventEmitterModule::EmitError(uString* reason)
-{
-    uStackFrame __("Fuse.Scripting.NativeEventEmitterModule", "EmitError(string)");
-    Emit(uArray::Init<uObject*>(::TYPES[10/*object[]*/], 2, uString::Const("error"), reason));
 }
 
 // protected void On(object eventName, Fuse.Scripting.Callback listener) [instance] :174
