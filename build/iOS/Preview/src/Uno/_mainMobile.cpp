@@ -44,8 +44,29 @@ namespace g{uClassType* FuseScriptingJavaScript_bundle_typeof();}
 namespace g{uClassType* FuseText_bundle_typeof();}
 namespace g{uClassType* UnoCore_bundle_typeof();}
 namespace g{uClassType* DreamPluspopup_bundle_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* DreamPluspopup_FuseControlsTextControl_Value_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* DreamPluspopup_FuseControlsTextInputControl_Value_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* DreamPluspopup_FuseElementsElement_Opacity_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* DreamPluspopup_FuseElementsElement_Visibility_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* DreamPluspopup_FuseReactiveEach_Items_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* DreamPluspopup_FuseTriggersActionsSetstring_Value_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* DreamPluspopup_FuseTriggersWhileBool_Value_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template1_typeof();}
 namespace g{namespace Fuse{struct AppBase_type;} ::g::Fuse::AppBase_type* MainView_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* push__Template_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* push__Template1_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* push__Template2_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* push__Template3_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* push__Template4_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* push__Template5_typeof();}
+namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* push_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* Pushalim__Template_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* Pushalim__Template1_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* Pushalim__Template2_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* Pushalim__Template3_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* Pushalim__Template4_typeof();}
+namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* Pushalim_typeof();}
 namespace g{namespace OpenGL{uClassType* GL_typeof();}}
 namespace g{namespace OpenGL{uEnumType* GLBlendEquation_typeof();}}
 namespace g{namespace OpenGL{uEnumType* GLBlendingFactor_typeof();}}
@@ -2692,8 +2713,29 @@ void uInitRtti()
         (uType*(*)())&::g::FuseText_bundle_typeof,
         (uType*(*)())&::g::UnoCore_bundle_typeof,
         (uType*(*)())&::g::DreamPluspopup_bundle_typeof,
+        (uType*(*)())&::g::DreamPluspopup_FuseControlsTextControl_Value_Property_typeof,
         (uType*(*)())&::g::DreamPluspopup_FuseControlsTextInputControl_Value_Property_typeof,
+        (uType*(*)())&::g::DreamPluspopup_FuseElementsElement_Opacity_Property_typeof,
+        (uType*(*)())&::g::DreamPluspopup_FuseElementsElement_Visibility_Property_typeof,
+        (uType*(*)())&::g::DreamPluspopup_FuseReactiveEach_Items_Property_typeof,
+        (uType*(*)())&::g::DreamPluspopup_FuseTriggersActionsSetstring_Value_Property_typeof,
+        (uType*(*)())&::g::DreamPluspopup_FuseTriggersWhileBool_Value_Property_typeof,
+        (uType*(*)())&::g::MainView__Template_typeof,
+        (uType*(*)())&::g::MainView__Template1_typeof,
         (uType*(*)())&::g::MainView_typeof,
+        (uType*(*)())&::g::push__Template_typeof,
+        (uType*(*)())&::g::push__Template1_typeof,
+        (uType*(*)())&::g::push__Template2_typeof,
+        (uType*(*)())&::g::push__Template3_typeof,
+        (uType*(*)())&::g::push__Template4_typeof,
+        (uType*(*)())&::g::push__Template5_typeof,
+        (uType*(*)())&::g::push_typeof,
+        (uType*(*)())&::g::Pushalim__Template_typeof,
+        (uType*(*)())&::g::Pushalim__Template1_typeof,
+        (uType*(*)())&::g::Pushalim__Template2_typeof,
+        (uType*(*)())&::g::Pushalim__Template3_typeof,
+        (uType*(*)())&::g::Pushalim__Template4_typeof,
+        (uType*(*)())&::g::Pushalim_typeof,
         (uType*(*)())&::g::OpenGL::GL_typeof,
         (uType*(*)())&::g::OpenGL::GLBlendEquation_typeof,
         (uType*(*)())&::g::OpenGL::GLBlendingFactor_typeof,

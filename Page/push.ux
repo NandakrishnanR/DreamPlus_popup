@@ -1,0 +1,193 @@
+<Page ux:Class="push">
+	<Router ux:Dependency="router" />
+<!-- 	<JavaScript File="push.js" />
+ -->
+    <DockPanel>
+        <TopFrameBackground DockPanel.Dock="Top" />
+            <StackPanel>
+<!--                 <Button Clicked="{sendNow}" Text="Send notification now2" Height="60" />
+ -->
+                <Rectangle Width="350" Height="50" Color="#E2E2E2" Y="110">
+                    <TextInput Row="0" Column="1" PlaceholderText="내용을 입력하세요." PlaceholderColor="#999" Value="{Contents}" TextColor="#000" CaretColor="#000" Alignment="Center" FontSize="20" /> 
+                 </Rectangle>
+
+
+                <Button Clicked="{sendLater}" Text="누르면 4초후 알림" Height="300" />
+            </StackPanel>
+        <BottomBarBackground DockPanel.Dock="Bottom" />
+    </DockPanel>
+
+
+
+    <Grid ColumnCount="3" CellSpacing="10" ChildOrder="RowMajor">
+
+<!-- Year -->
+		<Panel ux:Name="year" Height="90%">
+	      <Panel ux:Name="yearheader" Clicked="{YeartoggleOpen}" HitTestMode="LocalBoundsAndChildren" Layer="Underlay" Width="80" Height="80">
+	        <StackPanel>
+
+	        <Button Text="Year" Alignment="Center" />
+	        <!-- <Text Value="{Dayclick}" Alignment="Center" FontSize="20"/> -->
+	      </StackPanel>
+	      </Panel>
+	      <Panel ux:Name="dropyear" LayoutRole="Inert">
+	        <EnteringAnimation>
+	          <Scale Factor="1.5" />
+	          <StackPanel>
+	            <Each Items="{Year}">
+	                <Text Value="{=data()}" Clicked="{Yearclick}" FontSize="25" Color="Purple" X="40" Y="100" Alignment="Default" />
+	            </Each>
+	        </StackPanel>
+	        </EnteringAnimation>
+	       <WhileFalse Value="{YearisOpen}">
+	          <Change dropyear.Opacity="0" Duration="0.2" Easing="CubicOut" />
+	          <Change dropyear.Visibility="Hidden" Delay="0.2" />
+	          <Move Duration="0.2" Easing="CubicIn" />
+	        </WhileFalse>
+	      </Panel>
+    	</Panel>     
+
+<!-- Month -->
+		<Panel ux:Name="month" Height="90%">
+	      <Panel ux:Name="monthheader" Clicked="{MonthtoggleOpen}" HitTestMode="LocalBoundsAndChildren" Layer="Underlay" Width="80" Height="80">
+	        <StackPanel>
+
+	        <Button Text="Month" Alignment="Center" />
+	        <!-- <Text Value="{Dayclick}" Alignment="Center" FontSize="20"/> -->
+	      </StackPanel>
+	      </Panel>
+	      <Panel ux:Name="dropmonth" LayoutRole="Inert">
+	        <EnteringAnimation>
+	          <Scale Factor="1.5" />
+	          <StackPanel>
+	            <Each Items="{Month}">
+	                <Text Value="{=data()}" Clicked="{Monthclick}" FontSize="25" Color="Purple" X="40" Y="100" Alignment="Default" />
+	            </Each>
+	        </StackPanel>
+	        </EnteringAnimation>
+	       <WhileFalse Value="{MonthisOpen}">
+	          <Change dropmonth.Opacity="0" Duration="0.2" Easing="CubicOut" />
+	          <Change dropmonth.Visibility="Hidden" Delay="0.2" />
+	          <Move Duration="0.2" Easing="CubicIn" />
+	        </WhileFalse>
+	      </Panel>
+    	</Panel>     
+
+<!-- Date -->
+		<Panel ux:Name="date" Height="90%">
+	      <Panel ux:Name="dateheader" Clicked="{DatetoggleOpen}" HitTestMode="LocalBoundsAndChildren" Layer="Underlay" Width="80" Height="80">
+	        <StackPanel>
+
+	        <Button Text="Date" Alignment="Center" />
+	        <!-- <Text Value="{Dayclick}" Alignment="Center" FontSize="20"/> -->
+	      </StackPanel>
+	      </Panel>
+	      <Panel ux:Name="dropdate" LayoutRole="Inert">
+	        <EnteringAnimation>
+	          <Scale Factor="1.5" />
+	          <StackPanel>
+	            <Each Items="{Date}">
+	                <Text Value="{=data()}" Clicked="{Dateclick}" FontSize="25" Color="Purple" X="40" Y="100" Alignment="Default" />
+	            </Each>
+	        </StackPanel>
+	        </EnteringAnimation>
+	       <WhileFalse Value="{DateisOpen}">
+	          <Change dropdate.Opacity="0" Duration="0.2" Easing="CubicOut" />
+	          <Change dropdate.Visibility="Hidden" Delay="0.2" />
+	          <Move Duration="0.2" Easing="CubicIn" />
+	        </WhileFalse>
+	      </Panel>
+    	</Panel>     
+    </Grid>
+
+
+    <Grid ColumnCount="3" CellSpacing="10" ChildOrder="RowMajor" Alignment="Bottom">
+
+<!-- Day-->
+	     <Panel ux:Name="day" Height="90%">
+	      <Panel ux:Name="dayheader" Clicked="{DaytoggleOpen}" HitTestMode="LocalBoundsAndChildren" Layer="Underlay" Width="80" Height="80">
+	        <StackPanel>
+
+	        <Button Text="Day" Alignment="Center" />
+	        <!-- <Text Value="{Dayclick}" Alignment="Center" FontSize="20"/> -->
+	      </StackPanel>
+	      </Panel>
+	      <Panel ux:Name="dropday" LayoutRole="Inert">
+	        <EnteringAnimation>
+	          <Scale Factor="1.5" />
+	          <StackPanel>
+	            <Each Items="{Day}">
+	                <Text Value="{=data()}" Clicked="{Dayclick}" FontSize="25" Color="Purple" X="40" Y="100" Alignment="Default" />
+	            </Each>
+	        </StackPanel>
+	        </EnteringAnimation>
+	       <WhileFalse Value="{DayisOpen}">
+	          <Change dropday.Opacity="0" Duration="0.2" Easing="CubicOut" />
+	          <Change dropday.Visibility="Hidden" Delay="0.2" />
+	          <Move Duration="0.2" Easing="CubicIn" />
+	        </WhileFalse>
+	      </Panel>
+	    </Panel>
+
+
+<!-- Hourt -->
+
+	     <Panel ux:Name="hour" Height="90%">
+	      <Panel ux:Name="hourheader" Clicked="{HourtoggleOpen}" HitTestMode="LocalBoundsAndChildren" Layer="Underlay" Width="80" Height="80">
+	        <StackPanel>
+	        <Button Text="Hour" Alignment="Center" />
+	        <!-- <Text Value="{Hourclick}" Alignment="Center" FontSize="20"/> -->
+	      </StackPanel>
+	      </Panel>
+	      <Panel ux:Name="drophour" LayoutRole="Inert">
+	       <ScrollView Height="150" Width="30" Layer="Overlay" Alignment="TopCenter">
+	        <EnteringAnimation>
+	          <Scale Factor="1.5" />
+	          <StackPanel>
+	            <Each Items="{Hour}">
+	                <Text Value="{=data()}" Clicked="{Hourclick}" FontSize="25" Color="Purple" X="3" Y="30" Alignment="Center" />
+	            </Each>
+	        </StackPanel>
+	        </EnteringAnimation>
+	      </ScrollView>
+	       <WhileFalse Value="{HourisOpen}">
+	          <Change drophour.Opacity="0" Duration="0.2" Easing="CubicOut" />
+	          <Change drophour.Visibility="Hidden" Delay="0.2" />
+	          <Move Duration="0.2" Easing="CubicIn" />
+	        </WhileFalse>
+	      </Panel>
+	    </Panel>
+
+
+<!-- Minute -->
+	    <Panel ux:Name="minute" Height="90%">
+	      <Panel ux:Name="minuteheader" Clicked="{MinutetoggleOpen}" HitTestMode="LocalBoundsAndChildren" Layer="Underlay" Width="80" Height="80">
+	         <StackPanel>
+	        <Button Text="Minute" Alignment="Center" />
+	      </StackPanel>
+	      </Panel>
+	      <Panel ux:Name="dropminute" LayoutRole="Inert">
+	       <ScrollView Height="150" Width="30" Layer="Overlay" Alignment="TopCenter">
+	        <EnteringAnimation>
+	          <Scale Factor="1.5" />
+	          <StackPanel>
+	            <Each Items="{Minute}">
+	                <Text Value="{=data()}" Clicked="{Minuteclick}" FontSize="25" Color="Purple" X="2" Y="30" Alignment="TopCenter" />
+	            </Each>
+	        </StackPanel>
+	        </EnteringAnimation>
+	      </ScrollView>
+	       <WhileFalse Value="{MinuteisOpen}">
+	          <Change dropminute.Opacity="0" Duration="0.2" Easing="CubicOut" />
+	          <Change dropminute.Visibility="Hidden" Delay="0.2" />
+	          <Move Duration="0.2" Easing="CubicIn" />
+	        </WhileFalse>
+	      </Panel>
+	    </Panel>
+
+    </Grid>
+
+
+
+
+</Page>

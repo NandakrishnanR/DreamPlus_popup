@@ -1,0 +1,156 @@
+<Page ux:Class="Pushalim">
+	<Router ux:Dependency="router" />
+	<JavaScript File="Pushalim.js" />
+	<Rectangle Width="350" Height="50" Color="#E2E2E2" Y="50" CornerRadius="10">
+    	<TextInput Row="0" Column="1" PlaceholderText="내용을 입력하세요." PlaceholderColor="#999" Value="{Contents}" TextColor="#000" CaretColor="#000" Alignment="Center" FontSize="20" /> 
+    </Rectangle>
+
+    
+
+    <!-- Year button -->
+   			<Rectangle Color="#DAFE6A" Width="100" Height="40" X="30" Y="130">
+   				<Panel>
+	                <Text Value="Year" TextAlignment="Center" Alignment="VerticalCenter" ux:Name="Yearvalue" />
+	                <Clicked>
+	                	<Callback Handler="{YeartoggleOpen}" />
+	                </Clicked>
+                </Panel>
+            </Rectangle>
+            <WhileTrue Value="{YearisOpen}">
+			    <ScrollView Height="150" Layer="Overlay" X="30" Y="130" Width="100" Background="#F3A8FF">
+				    <StackPanel Height="150" Width="100" Margin="0, 0, 0, 210">
+					    <Each Items="{Year}">
+					        <Text Value="{=data()}" FontSize="25" Clicked="{Yearclick}" Color="Purple" Alignment="Default" TextAlignment="Center" ux:Name="Yeartext">
+					        	<Clicked>
+					        		<!-- <Callback Handler="{Yearclick}" /> -->
+					        		<Set Target="Yearvalue.Value" Value="{Yearselect}" />
+					        	</Clicked>
+					        </Text>
+					    </Each>
+					</StackPanel>
+				</ScrollView>
+			</WhileTrue>
+
+			
+
+    <!-- Month button -->
+            <Rectangle Color="#DAFE6A" Width="100" Height="40" Y="130">
+               <Panel>
+	                <Text Value="Month" TextAlignment="Center" Alignment="VerticalCenter" ux:Name="Monthvalue" />
+	                <Clicked>
+	                	<Callback Handler="{MonthtoggleOpen}" />
+	                </Clicked>
+                </Panel>
+            </Rectangle>
+            <WhileTrue Value="{MonthisOpen}">
+			    <ScrollView Height="150" Layer="Overlay" Y="130" Width="100" Background="#F3A8FF">
+				    <StackPanel Height="150" Width="100" Margin="0, 0, 0, 210">
+					    <Each Items="{Month}">
+					        <Text Value="{=data()}" FontSize="25" Clicked="{Monthclick}" Color="Purple" Alignment="Default" TextAlignment="Center" ux:Name="Monthtext">
+					        	<Clicked>
+<!-- 					        		<Callback Handler="{Monthclick}" />
+ -->				        		<Set Target="Monthvalue.Value" Value="{Monthselect}" />
+					        	</Clicked>
+					        </Text>
+					    </Each>
+					</StackPanel>
+				</ScrollView>
+			</WhileTrue>
+ 
+
+    <!-- Day button -->
+            <Rectangle Color="#DAFE6A" Width="100" Height="40" Y="130" X="250">
+                 <Panel>
+	                <Text Value="Day" TextAlignment="Center" Alignment="VerticalCenter" ux:Name="Dayvalue" />
+	                <Clicked>
+	                	<Callback Handler="{DaytoggleOpen}" />
+	                </Clicked>
+                </Panel>
+            </Rectangle>
+            <WhileTrue Value="{DayisOpen}">
+			    <ScrollView Height="150" Layer="Overlay" X="250" Y="130" Width="100" Background="#F3A8FF">
+				    <StackPanel Height="150" Width="100" Margin="0, 0, 0, 780">
+					    <Each Items="{Day}">
+					        <Text Value="{=data()}" FontSize="25" Clicked="{Dayclick}" Color="Purple" Alignment="Default" TextAlignment="Center" ux:Name="Daytext">
+					        	<Clicked>
+<!-- 					        		<Callback Handler="{Monthclick}" />
+ -->				        		<Set Target="Dayvalue.Value" Value="{Dayselect}" />
+					        	</Clicked>
+					        </Text>
+					    </Each>
+					</StackPanel>
+				</ScrollView>
+			</WhileTrue>
+            
+            
+           
+    <!-- Hour button -->
+            <Rectangle Color="#DAFE6A" Width="100" Height="40" X="70" Y="290">
+                 <Panel>
+	                <Text Value="Hour" TextAlignment="Center" Alignment="VerticalCenter" ux:Name="Hourvalue" />
+	                <Clicked>
+	                	<Callback Handler="{HourtoggleOpen}" />
+	                </Clicked>
+                </Panel>
+            </Rectangle>
+            <WhileTrue Value="{HourisOpen}">
+			    <ScrollView Height="150" Layer="Overlay" X="70" Y="290" Width="100" Background="#F3A8FF">
+				    <StackPanel Height="150" Width="100" Margin="0, 0, 0, 570">
+					    <Each Items="{Hour}">
+					        <Text Value="{=data()}" FontSize="25" Clicked="{Hourclick}" Color="Purple" Alignment="Default" TextAlignment="Center" ux:Name="Hourtext">
+					        	<Clicked>
+<!-- 					        		<Callback Handler="{Monthclick}" />
+ -->				        		<Set Target="Hourvalue.Value" Value="{Hourselect}" />
+					        	</Clicked>
+					        </Text>
+					    </Each>
+					</StackPanel>
+				</ScrollView>
+			</WhileTrue>
+
+
+
+    <!-- Minute button -->
+ 			<Rectangle Color="#DAFE6A" Width="100" Height="40" Y="290" X="200">
+                 <Panel>
+	                <Text Value="Minute" TextAlignment="Center" Alignment="VerticalCenter" ux:Name="Minutevalue" />
+	                <Clicked>
+	                	<Callback Handler="{MinutetoggleOpen}" />
+	                </Clicked>
+                </Panel>
+            </Rectangle>
+            <WhileTrue Value="{MinuteisOpen}">
+			    <ScrollView Height="150" Layer="Overlay" X="200" Y="290" Width="100" Background="#F3A8FF">
+				    <StackPanel Height="150" Width="100" Margin="0, 0, 0, 1650">
+					    <Each Items="{Minute}">
+					        <Text Value="{=data()}" FontSize="25" Clicked="{Minuteclick}" Color="Purple" Alignment="Default" TextAlignment="Center" ux:Name="Minutetext">
+					        	<Clicked>
+<!-- 					        		<Callback Handler="{Monthclick}" />
+ -->				        		<Set Target="Minutevalue.Value" Value="{Minuteselect}" />
+					        	</Clicked>
+					        </Text>
+					    </Each>
+					</StackPanel>
+				</ScrollView>
+			</WhileTrue>
+
+
+			
+
+
+			 <Button Width="100" Height="40" Y="480" Color="#AFD1FF" ux:Name="sendtime">
+		    	<Text Value="보내기" TextAlignment="Center" Alignment="VerticalCenter" />
+		    	<Clicked>
+		    		<Callback Handler="{timesend}" />
+		    	</Clicked>
+		    </Button>
+		  <!--    <WhileTrue Value="{pushtimeisOpen}">
+		     	<Rectangle Width="300" Height="50" Y="400" Color="#999" >
+			    	<Text Value="{pushtime}" TextAlignment="Center" TextColor="Black" Alignment="VerticalCenter"  />
+			    	<Clicked>
+			    		<Callback Handler="{pushtimeclick}" />
+			    	</Clicked>
+			    </Rectangle>
+			</WhileTrue> -->
+
+</Page>

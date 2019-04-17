@@ -15,17 +15,17 @@ namespace g{
 static void DreamPluspopup_bundle__cctor__fn(uType* __type)
 {
     ::g::Uno::IO::Bundle_typeof()->Init();
-    DreamPluspopup_bundle::main86941a8b_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"DreamPlus-p...*/]))->GetFile(::STRINGS[1/*"main-f977bf...*/]);
+    DreamPluspopup_bundle::Pushalim0d8cc207_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"DreamPlus-p...*/]))->GetFile(::STRINGS[1/*"pushalim-d0...*/]);
 }
 
 static void DreamPluspopup_bundle_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("DreamPlus-popup");
-    ::STRINGS[1] = uString::Const("main-f977bfbc.js");
+    ::STRINGS[1] = uString::Const("pushalim-d0e3e45e.js");
     type->SetFields(0,
-        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&DreamPluspopup_bundle::main86941a8b_, uFieldFlagsStatic);
+        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&DreamPluspopup_bundle::Pushalim0d8cc207_, uFieldFlagsStatic);
     type->Reflection.SetFields(1,
-        new uField("main86941a8b", 0));
+        new uField("Pushalim0d8cc207", 0));
 }
 
 uClassType* DreamPluspopup_bundle_typeof()
@@ -42,7 +42,7 @@ uClassType* DreamPluspopup_bundle_typeof()
     return type;
 }
 
-uSStrong< ::g::Uno::IO::BundleFile*> DreamPluspopup_bundle::main86941a8b_;
+uSStrong< ::g::Uno::IO::BundleFile*> DreamPluspopup_bundle::Pushalim0d8cc207_;
 // }
 
 } // ::g

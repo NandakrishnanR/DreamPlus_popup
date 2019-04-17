@@ -29,7 +29,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public sealed class Page :46
+// public class Page :46
 // {
 ::g::Fuse::Controls::Panel_type* Page_typeof();
 void Page__ctor_7_fn(Page* __this);

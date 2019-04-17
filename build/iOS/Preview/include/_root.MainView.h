@@ -8,10 +8,10 @@
 namespace g{namespace Fuse{namespace Drawing{struct BrushConverter;}}}
 namespace g{namespace Fuse{namespace FileSystem{struct FileSystemModule;}}}
 namespace g{namespace Fuse{namespace LocalNotifications{struct LocalNotify;}}}
+namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct DiagnosticsImplModule;}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct Http;}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct TimerModule;}}}}
-namespace g{namespace Fuse{namespace Reactive{struct EventBinding;}}}
 namespace g{namespace Fuse{namespace Storage{struct StorageModule;}}}
 namespace g{namespace Fuse{namespace Testing{struct UnoTestingHelper;}}}
 namespace g{namespace Fuse{namespace Triggers{struct BusyTaskModule;}}}
@@ -24,8 +24,6 @@ namespace g{namespace FuseJS{struct Globals;}}
 namespace g{namespace FuseJS{struct Lifecycle;}}
 namespace g{namespace FuseJS{struct UserEvents;}}
 namespace g{namespace Polyfills{namespace Window{struct WindowModule;}}}
-namespace g{namespace Uno{namespace UX{struct NameTable;}}}
-namespace g{namespace Uno{namespace UX{struct Property1;}}}
 namespace g{namespace Uno{namespace UX{struct Selector;}}}
 namespace g{struct MainView;}
 
@@ -40,12 +38,7 @@ void MainView__New2_fn(MainView** __retval);
 
 struct MainView : ::g::Fuse::App
 {
-    uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
-    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb0;
-    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb1;
-    uStrong< ::g::Uno::UX::NameTable*> __g_nametable1;
-    static uSStrong<uArray*> __g_static_nametable1_;
-    static uSStrong<uArray*>& __g_static_nametable1() { return MainView_typeof()->Init(), __g_static_nametable1_; }
+    uStrong< ::g::Fuse::Navigation::Router*> router;
     uStrong< ::g::Fuse::Reactive::FuseJS::DiagnosticsImplModule*> FuseReactiveFuseJSDiagnosticsImplModule;
     uStrong< ::g::Fuse::Reactive::FuseJS::Http*> FuseReactiveFuseJSHttp;
     uStrong< ::g::Fuse::Reactive::FuseJS::TimerModule*> FuseReactiveFuseJSTimerModule;

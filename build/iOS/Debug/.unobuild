@@ -1,4 +1,0 @@
-$: 1223114909
-BuildCommand: "bash build.sh"
-RunCommand: "bash run.sh"
-Product: build/Release-iphoneos/DreamPlus-popup.app/DreamPlus-popup

@@ -1,20 +1,13 @@
-<App>
-    <JavaScript File="main.js" />
+<App Model="MainView">
+    <Router ux:Name="router" />
+<!--    	<JavaScript File="./Page/Pushalim.js" />
+ -->
+    <Navigator DefaultPath="Pushalim">
+        <push ux:Template="push" router="router" Color="#FFF" />
+        <Pushalim ux:Template="Pushalim" router="router" Color="#FFF" Margin="0, 0, 0, 0">
+        	
+            
 
-    <DockPanel>
-        <TopFrameBackground DockPanel.Dock="Top" />
-        <ScrollView>
-            <StackPanel>
-                <Button Clicked="{sendNow}" Text="Send notification now2" Height="60"/>
-
-                <Rectangle Width="350" Height="50" Color="#E2E2E2" Y="110">
-                    <TextInput Row="0" Column="1" PlaceholderText="내용을 입력하세요." PlaceholderColor="#999"  Value="{Contents}" TextColor="#000" CaretColor="#000" Alignment="Center" FontSize="20"/> 
-                 </Rectangle>
-
-
-                <Button Clicked="{sendLater}" Text="누르면 4초후 알림" Height="300" />
-            </StackPanel>
-        </ScrollView>
-        <BottomBarBackground DockPanel.Dock="Bottom" />
-    </DockPanel>
+        </Pushalim>
+    </Navigator>
 </App>

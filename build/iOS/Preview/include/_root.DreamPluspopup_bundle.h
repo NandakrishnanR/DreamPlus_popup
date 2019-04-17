@@ -14,8 +14,8 @@ uClassType* DreamPluspopup_bundle_typeof();
 
 struct DreamPluspopup_bundle : uObject
 {
-    static uSStrong< ::g::Uno::IO::BundleFile*> main86941a8b_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& main86941a8b() { return DreamPluspopup_bundle_typeof()->Init(), main86941a8b_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> Pushalim0d8cc207_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& Pushalim0d8cc207() { return DreamPluspopup_bundle_typeof()->Init(), Pushalim0d8cc207_; }
 };
 // }
 

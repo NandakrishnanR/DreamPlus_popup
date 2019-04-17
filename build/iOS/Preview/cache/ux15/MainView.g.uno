@@ -1,14 +1,56 @@
 [Uno.Compiler.UxGenerated]
 public partial class MainView: Fuse.App
 {
-    global::Uno.UX.Property<string> temp_Value_inst;
-    internal global::Fuse.Reactive.EventBinding temp_eb0;
-    internal global::Fuse.Reactive.EventBinding temp_eb1;
-    global::Uno.UX.NameTable __g_nametable;
-    static string[] __g_static_nametable = new string[] {
-        "temp_eb0",
-        "temp_eb1"
-    };
+    [Uno.Compiler.UxGenerated]
+    public partial class Template: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template(MainView parent, MainView parentInstance): base("push", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::push(__parent.router);
+            __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 6;
+            __self.SourceFileName = "MainView.ux";
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "push";
+    }
+    [Uno.Compiler.UxGenerated]
+    public partial class Template1: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template1(MainView parent, MainView parentInstance): base("Pushalim", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template1()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::Pushalim(__parent.router);
+            __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Margin = float4(0f, 0f, 0f, 0f);
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 7;
+            __self.SourceFileName = "MainView.ux";
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "Pushalim";
+    }
+    internal global::Fuse.Navigation.Router router;
     internal global::Fuse.Reactive.FuseJS.DiagnosticsImplModule FuseReactiveFuseJSDiagnosticsImplModule;
     internal global::Fuse.Reactive.FuseJS.Http FuseReactiveFuseJSHttp;
     internal global::Fuse.Reactive.FuseJS.TimerModule FuseReactiveFuseJSTimerModule;
@@ -163,89 +205,21 @@ public partial class MainView: Fuse.App
         FuseJSBundle = new global::FuseJS.Bundle();
         FuseJSFileReaderImpl = new global::FuseJS.FileReaderImpl();
         FuseJSUserEvents = new global::FuseJS.UserEvents();
-        __g_nametable = new global::Uno.UX.NameTable(null, __g_static_nametable);
-        var temp1 = new global::Fuse.Reactive.Data("sendNow");
-        var temp = new global::Fuse.Controls.TextInput();
-        temp_Value_inst = new DreamPluspopup_FuseControlsTextInputControl_Value_Property(temp, __selector0);
-        var temp2 = new global::Fuse.Reactive.Data("Contents");
-        var temp3 = new global::Fuse.Reactive.Data("sendLater");
-        var temp4 = new global::Fuse.Reactive.JavaScript(__g_nametable);
-        var temp5 = new global::Fuse.Controls.DockPanel();
-        var temp6 = new global::Fuse.Controls.TopFrameBackground();
-        var temp7 = new global::Fuse.Controls.ScrollView();
-        var temp8 = new global::Fuse.Controls.StackPanel();
-        var temp9 = new global::Fuse.Controls.Button();
-        temp_eb0 = new global::Fuse.Reactive.EventBinding(temp1);
-        var temp10 = new global::Fuse.Controls.Rectangle();
-        var temp11 = new global::Fuse.Reactive.DataBinding(temp_Value_inst, temp2, Fuse.Reactive.BindingMode.Default);
-        var temp12 = new global::Fuse.Controls.Button();
-        temp_eb1 = new global::Fuse.Reactive.EventBinding(temp3);
-        var temp13 = new global::Fuse.Controls.BottomBarBackground();
-        temp4.LineNumber = 2;
-        temp4.FileName = "MainView.ux";
-        temp4.SourceLineNumber = 2;
-        temp4.SourceFileName = "MainView.ux";
-        temp4.File = new global::Uno.UX.BundleFileSource(import("../../../../../main.js"));
-        temp5.SourceLineNumber = 4;
-        temp5.SourceFileName = "MainView.ux";
-        temp5.Children.Add(temp6);
-        temp5.Children.Add(temp7);
-        temp5.Children.Add(temp13);
-        temp6.SourceLineNumber = 5;
-        temp6.SourceFileName = "MainView.ux";
-        global::Fuse.Controls.DockPanel.SetDock(temp6, Fuse.Layouts.Dock.Top);
-        temp7.SourceLineNumber = 6;
-        temp7.SourceFileName = "MainView.ux";
-        temp7.Children.Add(temp8);
-        temp8.SourceLineNumber = 7;
-        temp8.SourceFileName = "MainView.ux";
-        temp8.Children.Add(temp9);
-        temp8.Children.Add(temp10);
-        temp8.Children.Add(temp12);
-        temp9.Text = "Send notification now2";
-        temp9.Height = new Uno.UX.Size(60f, Uno.UX.Unit.Unspecified);
-        temp9.SourceLineNumber = 8;
-        temp9.SourceFileName = "MainView.ux";
-        global::Fuse.Gestures.Clicked.AddHandler(temp9, temp_eb0.OnEvent);
-        temp9.Bindings.Add(temp_eb0);
-        temp1.SourceLineNumber = 8;
-        temp1.SourceFileName = "MainView.ux";
-        temp10.Color = float4(0.8862745f, 0.8862745f, 0.8862745f, 1f);
-        temp10.Width = new Uno.UX.Size(350f, Uno.UX.Unit.Unspecified);
-        temp10.Height = new Uno.UX.Size(50f, Uno.UX.Unit.Unspecified);
-        temp10.Y = new Uno.UX.Size(110f, Uno.UX.Unit.Unspecified);
-        temp10.SourceLineNumber = 10;
-        temp10.SourceFileName = "MainView.ux";
-        temp10.Children.Add(temp);
-        temp.PlaceholderText = "내용을 입력하세요.";
-        temp.PlaceholderColor = float4(0.6f, 0.6f, 0.6f, 1f);
-        temp.FontSize = 20f;
-        temp.TextColor = float4(0f, 0f, 0f, 1f);
-        temp.CaretColor = float4(0f, 0f, 0f, 1f);
-        temp.Alignment = Fuse.Elements.Alignment.Center;
-        temp.SourceLineNumber = 11;
+        router = new global::Fuse.Navigation.Router();
+        var temp = new global::Fuse.Controls.Navigator();
+        var push = new Template(this, this);
+        var Pushalim = new Template1(this, this);
+        global::Fuse.Models.ModelJavaScript.SetAppModel(this, "MainView");
+        router.Name = __selector0;
+        router.SourceLineNumber = 2;
+        router.SourceFileName = "MainView.ux";
+        temp.DefaultPath = "Pushalim";
+        temp.SourceLineNumber = 5;
         temp.SourceFileName = "MainView.ux";
-        global::Fuse.Controls.Grid.SetRow(temp, 0);
-        global::Fuse.Controls.Grid.SetColumn(temp, 1);
-        temp.Bindings.Add(temp11);
-        temp2.SourceLineNumber = 11;
-        temp2.SourceFileName = "MainView.ux";
-        temp12.Text = "누르면 4초후 알림";
-        temp12.Height = new Uno.UX.Size(300f, Uno.UX.Unit.Unspecified);
-        temp12.SourceLineNumber = 15;
-        temp12.SourceFileName = "MainView.ux";
-        global::Fuse.Gestures.Clicked.AddHandler(temp12, temp_eb1.OnEvent);
-        temp12.Bindings.Add(temp_eb1);
-        temp3.SourceLineNumber = 15;
-        temp3.SourceFileName = "MainView.ux";
-        temp13.SourceLineNumber = 18;
-        temp13.SourceFileName = "MainView.ux";
-        global::Fuse.Controls.DockPanel.SetDock(temp13, Fuse.Layouts.Dock.Bottom);
-        __g_nametable.This = this;
-        __g_nametable.Objects.Add(temp_eb0);
-        __g_nametable.Objects.Add(temp_eb1);
-        this.Children.Add(temp4);
-        this.Children.Add(temp5);
+        temp.Templates.Add(push);
+        temp.Templates.Add(Pushalim);
+        this.Children.Add(router);
+        this.Children.Add(temp);
     }
-    static global::Uno.UX.Selector __selector0 = "Value";
+    static global::Uno.UX.Selector __selector0 = "router";
 }
