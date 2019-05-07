@@ -1,0 +1,138 @@
+<Page ux:Class="testpage">
+	<Router ux:Dependency="router" />
+	<JavaScript File="test.js" />
+	<Panel Alignment="HorizontalCenter" Height="400">
+		<StackPanel Alignment="HorizontalCenter">
+
+			<WhileTrue Value="{popup_visible}">
+								<Panel ux:Name="popup" Width="300" Height="200" Background="#909190">
+			
+									<Circle Color="#E6E6E6" Width="20" Height="20" Alignment="TopRight" Margin="0, 0, 0, 0">
+										<Clicked>
+											<Callback Handler="{popoff}" />
+										</Clicked>
+									</Circle>
+									<Rectangle Alignment="HorizontalCenter" Width="270" Height="80" Margin="0, 0, 0, 0" Color="#FEFFFE">
+										<Grid RowCount="1" ColumnCount="5" Height="22" Width="240">
+											<!-- 오전 오후 선택부분 -->					
+											<Panel Height="80">
+												<Rectangle Color="#E6E6E6" Margin="0, 0, 0, 40" Height="1">
+													<Stroke Color="#A7A8A8" Width="5" />
+												</Rectangle>
+												<Rectangle Color="#E6E6E6" Height="1" Margin="0, 40, 0, 0">
+													<Stroke Width="3" Color="#909090" />
+												</Rectangle>
+												<WhileTrue Value="{dateToggle}">
+													<Rectangle Background="#FEFFFE" Alignment="Top" Opacity="0.715" Height="20" />
+													
+													<Rectangle Background="#FEFFFE" Alignment="Bottom" Opacity="0.715" Height="20" />
+													<ScrollView Height="80">
+														<StackPanel Alignment="Top" ItemSpacing="10" Margin="0, 30, 0, 0">
+															<Each Items="{dateValue}">
+																<Text Value="{=data()}" FontSize="20" Clicked="{choiceDate}" Color="#A7A9A9" Alignment="Default" TextAlignment="Center">
+																	<Clicked>							
+																		<Set Target="selectDate.Value" Value="{dateInit}" />
+																	</Clicked>
+																</Text>
+															</Each>
+														</StackPanel>						
+													</ScrollView>
+													<Rectangle Background="#FEFFFE" />
+												</WhileTrue>
+												<Rectangle>
+													<Text Row="0" Column="1" TextColor="#8BB0C6" Alignment="Center" FontSize="20" Width="50" Value="{dateInit}" TextAlignment="Center" ux:Name="selectDate" />
+													<Clicked>
+														<Callback Handler="{dateChange}" />
+													</Clicked>
+												</Rectangle>
+											</Panel>
+			
+											<Rectangle />
+			
+											<!-- 시 선택부분	 -->				
+											<Panel Height="80">
+												<Rectangle Color="#E6E6E6" Margin="0, 0, 0, 40" Height="1">
+													<Stroke Color="#A7A8A8" Width="5" />
+												</Rectangle>
+												<Rectangle Color="#E6E6E6" Height="1" Margin="0, 40, 0, 0">
+													<Stroke Width="3" Color="#909090" />
+												</Rectangle>
+												<WhileTrue Value="{hourToggle}">
+													<Rectangle Alignment="Top" Height="30" Opacity="0.715" Background="#FEFFFE" />
+													<Rectangle Alignment="Bottom" Height="30" Opacity="0.715" Background="#FEFFFE" />
+													<ScrollView Height="80">
+														<StackPanel Alignment="Top" ItemSpacing="10" Margin="0, 30, 0, 0">
+															<Each Items="{hourValue}">
+																<Text Value="{=data()}" FontSize="20" Clicked="{choiceHour}" Color="#A7A9A9" Alignment="Default" TextAlignment="Center">
+																	<Clicked>							
+																		<Set Target="selectHour.Value" Value="{hourInit}" />
+																	</Clicked>
+																</Text>
+															</Each>
+														</StackPanel>						
+													</ScrollView>
+													<Rectangle Background="#FEFFFE" />
+												</WhileTrue>
+												<Rectangle>
+													<Text Row="0" Column="1" TextColor="#8BB0C6" Alignment="Center" FontSize="20" Width="50" Value="{hourInit}" TextAlignment="Center" ux:Name="selectHour" />
+													<Clicked>
+														<Callback Handler="{hourChange}" />
+													</Clicked>
+												</Rectangle>
+											</Panel>
+			
+			
+											<Text Value=":" TextAlignment="Center" Alignment="VerticalCenter" Margin="0, 0, 0, 0" FontSize="20" />
+			
+											<!-- 일 선택부분 -->
+											<Panel Height="80">
+												<Rectangle Color="#E6E6E6" Margin="0, 0, 0, 40" Height="1">
+													<Stroke Color="#A7A8A8" Width="5" />
+												</Rectangle>
+												<Rectangle Color="#E6E6E6" Height="1" Margin="0, 40, 0, 0">
+													<Stroke Width="3" Color="#909090" />
+												</Rectangle>
+												<WhileTrue Value="{minuteToggle}">
+													<Rectangle Background="#FEFFFE" Alignment="Top" Height="30" Opacity="0.715" />
+													<Rectangle Background="#FEFFFE" Alignment="Bottom" Height="30" Opacity="0.715" />
+													<ScrollView Height="80">
+														<StackPanel Alignment="Default" ItemSpacing="10" Margin="0, 30, 0, 0">
+															<Each Items="{minuteValue}">
+																<Text Value="{=data()}" FontSize="20" Clicked="{choiceMinute}" Color="#A7A9A9" Alignment="Default" TextAlignment="Center">
+																	<Clicked>							
+																		<Set Target="selectMinute.Value" Value="{minuteInit}" />
+																	</Clicked>
+																</Text>
+															</Each>
+														</StackPanel>						
+													</ScrollView>
+													<Rectangle Background="#FEFFFE" />
+												</WhileTrue>
+												<Rectangle>
+													<Text Row="0" Column="1" TextColor="#8BB0C6" Alignment="Center" FontSize="20" Width="50" Value="{minuteInit}" TextAlignment="Center" ux:Name="selectMinute" />
+													<Clicked>
+														<Callback Handler="{minuteChange}" />
+													</Clicked>
+												</Rectangle>
+											</Panel>
+										</Grid>
+									</Rectangle>
+			
+								</Panel>			
+							</WhileTrue>
+			<Rectangle Color="#FCFF8E" Width="140" Height="30" Padding="0, 0, 0, 0" Margin="0, 0, 0, 0" Y="100">
+
+
+				<Text Row="0" Column="1" TextColor="#A7A9A9" Alignment="Center" FontSize="20" Width="110" Value="{timeInit}" TextAlignment="Center" ux:Name="selectTime" Margin="0, 0, 20, 0" />
+				<Clicked>
+					<Callback Handler="{popup}" />
+				</Clicked>
+				<Image File="../Assets/datedetaildown.png" Alignment="CenterRight" Margin="0, 0, 5, 0" Width="15" />
+			</Rectangle>
+
+		</StackPanel>
+	</Panel>
+
+
+
+</Page>
