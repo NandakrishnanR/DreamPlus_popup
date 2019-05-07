@@ -13,7 +13,7 @@ public partial class push: Fuse.Controls.Page
             __parentInstance = parentInstance;
         }
         global::Uno.UX.Property<string> __self_Value_inst;
-        internal global::Fuse.Reactive.EventBinding temp_eb4;
+        internal global::Fuse.Reactive.EventBinding temp_eb13;
         static Template()
         {
         }
@@ -24,7 +24,7 @@ public partial class push: Fuse.Controls.Page
             var temp = new global::Fuse.Reactive.DataFunction();
             var temp1 = new global::Fuse.Reactive.Data("Yearclick");
             var temp2 = new global::Fuse.Reactive.DataBinding(__self_Value_inst, temp, Fuse.Reactive.BindingMode.Default);
-            temp_eb4 = new global::Fuse.Reactive.EventBinding(temp1);
+            temp_eb13 = new global::Fuse.Reactive.EventBinding(temp1);
             __self.FontSize = 25f;
             __self.Color = Fuse.Drawing.Colors.Purple;
             __self.Alignment = Fuse.Elements.Alignment.Default;
@@ -32,13 +32,13 @@ public partial class push: Fuse.Controls.Page
             __self.Y = new Uno.UX.Size(100f, Uno.UX.Unit.Unspecified);
             __self.SourceLineNumber = 38;
             __self.SourceFileName = "Page/push.ux";
-            global::Fuse.Gestures.Clicked.AddHandler(__self, temp_eb4.OnEvent);
+            global::Fuse.Gestures.Clicked.AddHandler(__self, temp_eb13.OnEvent);
             temp.SourceLineNumber = 38;
             temp.SourceFileName = "Page/push.ux";
             temp1.SourceLineNumber = 38;
             temp1.SourceFileName = "Page/push.ux";
             __self.Bindings.Add(temp2);
-            __self.Bindings.Add(temp_eb4);
+            __self.Bindings.Add(temp_eb13);
             return __self;
         }
         static global::Uno.UX.Selector __selector0 = "Value";
@@ -54,7 +54,7 @@ public partial class push: Fuse.Controls.Page
             __parentInstance = parentInstance;
         }
         global::Uno.UX.Property<string> __self_Value_inst;
-        internal global::Fuse.Reactive.EventBinding temp_eb6;
+        internal global::Fuse.Reactive.EventBinding temp_eb15;
         static Template1()
         {
         }
@@ -65,7 +65,7 @@ public partial class push: Fuse.Controls.Page
             var temp = new global::Fuse.Reactive.DataFunction();
             var temp1 = new global::Fuse.Reactive.Data("Monthclick");
             var temp2 = new global::Fuse.Reactive.DataBinding(__self_Value_inst, temp, Fuse.Reactive.BindingMode.Default);
-            temp_eb6 = new global::Fuse.Reactive.EventBinding(temp1);
+            temp_eb15 = new global::Fuse.Reactive.EventBinding(temp1);
             __self.FontSize = 25f;
             __self.Color = Fuse.Drawing.Colors.Purple;
             __self.Alignment = Fuse.Elements.Alignment.Default;
@@ -73,13 +73,13 @@ public partial class push: Fuse.Controls.Page
             __self.Y = new Uno.UX.Size(100f, Uno.UX.Unit.Unspecified);
             __self.SourceLineNumber = 64;
             __self.SourceFileName = "Page/push.ux";
-            global::Fuse.Gestures.Clicked.AddHandler(__self, temp_eb6.OnEvent);
+            global::Fuse.Gestures.Clicked.AddHandler(__self, temp_eb15.OnEvent);
             temp.SourceLineNumber = 64;
             temp.SourceFileName = "Page/push.ux";
             temp1.SourceLineNumber = 64;
             temp1.SourceFileName = "Page/push.ux";
             __self.Bindings.Add(temp2);
-            __self.Bindings.Add(temp_eb6);
+            __self.Bindings.Add(temp_eb15);
             return __self;
         }
         static global::Uno.UX.Selector __selector0 = "Value";
@@ -95,7 +95,7 @@ public partial class push: Fuse.Controls.Page
             __parentInstance = parentInstance;
         }
         global::Uno.UX.Property<string> __self_Value_inst;
-        internal global::Fuse.Reactive.EventBinding temp_eb8;
+        internal global::Fuse.Reactive.EventBinding temp_eb17;
         static Template2()
         {
         }
@@ -106,7 +106,7 @@ public partial class push: Fuse.Controls.Page
             var temp = new global::Fuse.Reactive.DataFunction();
             var temp1 = new global::Fuse.Reactive.Data("Dateclick");
             var temp2 = new global::Fuse.Reactive.DataBinding(__self_Value_inst, temp, Fuse.Reactive.BindingMode.Default);
-            temp_eb8 = new global::Fuse.Reactive.EventBinding(temp1);
+            temp_eb17 = new global::Fuse.Reactive.EventBinding(temp1);
             __self.FontSize = 25f;
             __self.Color = Fuse.Drawing.Colors.Purple;
             __self.Alignment = Fuse.Elements.Alignment.Default;
@@ -114,13 +114,13 @@ public partial class push: Fuse.Controls.Page
             __self.Y = new Uno.UX.Size(100f, Uno.UX.Unit.Unspecified);
             __self.SourceLineNumber = 90;
             __self.SourceFileName = "Page/push.ux";
-            global::Fuse.Gestures.Clicked.AddHandler(__self, temp_eb8.OnEvent);
+            global::Fuse.Gestures.Clicked.AddHandler(__self, temp_eb17.OnEvent);
             temp.SourceLineNumber = 90;
             temp.SourceFileName = "Page/push.ux";
             temp1.SourceLineNumber = 90;
             temp1.SourceFileName = "Page/push.ux";
             __self.Bindings.Add(temp2);
-            __self.Bindings.Add(temp_eb8);
+            __self.Bindings.Add(temp_eb17);
             return __self;
         }
         static global::Uno.UX.Selector __selector0 = "Value";
@@ -136,7 +136,7 @@ public partial class push: Fuse.Controls.Page
             __parentInstance = parentInstance;
         }
         global::Uno.UX.Property<string> __self_Value_inst;
-        internal global::Fuse.Reactive.EventBinding temp_eb10;
+        internal global::Fuse.Reactive.EventBinding temp_eb19;
         static Template3()
         {
         }
@@ -147,7 +147,7 @@ public partial class push: Fuse.Controls.Page
             var temp = new global::Fuse.Reactive.DataFunction();
             var temp1 = new global::Fuse.Reactive.Data("Dayclick");
             var temp2 = new global::Fuse.Reactive.DataBinding(__self_Value_inst, temp, Fuse.Reactive.BindingMode.Default);
-            temp_eb10 = new global::Fuse.Reactive.EventBinding(temp1);
+            temp_eb19 = new global::Fuse.Reactive.EventBinding(temp1);
             __self.FontSize = 25f;
             __self.Color = Fuse.Drawing.Colors.Purple;
             __self.Alignment = Fuse.Elements.Alignment.Default;
@@ -155,13 +155,13 @@ public partial class push: Fuse.Controls.Page
             __self.Y = new Uno.UX.Size(100f, Uno.UX.Unit.Unspecified);
             __self.SourceLineNumber = 120;
             __self.SourceFileName = "Page/push.ux";
-            global::Fuse.Gestures.Clicked.AddHandler(__self, temp_eb10.OnEvent);
+            global::Fuse.Gestures.Clicked.AddHandler(__self, temp_eb19.OnEvent);
             temp.SourceLineNumber = 120;
             temp.SourceFileName = "Page/push.ux";
             temp1.SourceLineNumber = 120;
             temp1.SourceFileName = "Page/push.ux";
             __self.Bindings.Add(temp2);
-            __self.Bindings.Add(temp_eb10);
+            __self.Bindings.Add(temp_eb19);
             return __self;
         }
         static global::Uno.UX.Selector __selector0 = "Value";
@@ -177,7 +177,7 @@ public partial class push: Fuse.Controls.Page
             __parentInstance = parentInstance;
         }
         global::Uno.UX.Property<string> __self_Value_inst;
-        internal global::Fuse.Reactive.EventBinding temp_eb12;
+        internal global::Fuse.Reactive.EventBinding temp_eb21;
         static Template4()
         {
         }
@@ -188,7 +188,7 @@ public partial class push: Fuse.Controls.Page
             var temp = new global::Fuse.Reactive.DataFunction();
             var temp1 = new global::Fuse.Reactive.Data("Hourclick");
             var temp2 = new global::Fuse.Reactive.DataBinding(__self_Value_inst, temp, Fuse.Reactive.BindingMode.Default);
-            temp_eb12 = new global::Fuse.Reactive.EventBinding(temp1);
+            temp_eb21 = new global::Fuse.Reactive.EventBinding(temp1);
             __self.FontSize = 25f;
             __self.Color = Fuse.Drawing.Colors.Purple;
             __self.Alignment = Fuse.Elements.Alignment.Center;
@@ -196,13 +196,13 @@ public partial class push: Fuse.Controls.Page
             __self.Y = new Uno.UX.Size(30f, Uno.UX.Unit.Unspecified);
             __self.SourceLineNumber = 148;
             __self.SourceFileName = "Page/push.ux";
-            global::Fuse.Gestures.Clicked.AddHandler(__self, temp_eb12.OnEvent);
+            global::Fuse.Gestures.Clicked.AddHandler(__self, temp_eb21.OnEvent);
             temp.SourceLineNumber = 148;
             temp.SourceFileName = "Page/push.ux";
             temp1.SourceLineNumber = 148;
             temp1.SourceFileName = "Page/push.ux";
             __self.Bindings.Add(temp2);
-            __self.Bindings.Add(temp_eb12);
+            __self.Bindings.Add(temp_eb21);
             return __self;
         }
         static global::Uno.UX.Selector __selector0 = "Value";
@@ -218,7 +218,7 @@ public partial class push: Fuse.Controls.Page
             __parentInstance = parentInstance;
         }
         global::Uno.UX.Property<string> __self_Value_inst;
-        internal global::Fuse.Reactive.EventBinding temp_eb14;
+        internal global::Fuse.Reactive.EventBinding temp_eb23;
         static Template5()
         {
         }
@@ -229,7 +229,7 @@ public partial class push: Fuse.Controls.Page
             var temp = new global::Fuse.Reactive.DataFunction();
             var temp1 = new global::Fuse.Reactive.Data("Minuteclick");
             var temp2 = new global::Fuse.Reactive.DataBinding(__self_Value_inst, temp, Fuse.Reactive.BindingMode.Default);
-            temp_eb14 = new global::Fuse.Reactive.EventBinding(temp1);
+            temp_eb23 = new global::Fuse.Reactive.EventBinding(temp1);
             __self.FontSize = 25f;
             __self.Color = Fuse.Drawing.Colors.Purple;
             __self.Alignment = Fuse.Elements.Alignment.TopCenter;
@@ -237,13 +237,13 @@ public partial class push: Fuse.Controls.Page
             __self.Y = new Uno.UX.Size(30f, Uno.UX.Unit.Unspecified);
             __self.SourceLineNumber = 175;
             __self.SourceFileName = "Page/push.ux";
-            global::Fuse.Gestures.Clicked.AddHandler(__self, temp_eb14.OnEvent);
+            global::Fuse.Gestures.Clicked.AddHandler(__self, temp_eb23.OnEvent);
             temp.SourceLineNumber = 175;
             temp.SourceFileName = "Page/push.ux";
             temp1.SourceLineNumber = 175;
             temp1.SourceFileName = "Page/push.ux";
             __self.Bindings.Add(temp2);
-            __self.Bindings.Add(temp_eb14);
+            __self.Bindings.Add(temp_eb23);
             return __self;
         }
         static global::Uno.UX.Selector __selector0 = "Value";
@@ -273,30 +273,30 @@ public partial class push: Fuse.Controls.Page
     global::Uno.UX.Property<float> dropminute_Opacity_inst;
     global::Uno.UX.Property<Fuse.Elements.Visibility> dropminute_Visibility_inst;
     global::Uno.UX.Property<bool> temp12_Value_inst;
-    internal global::Fuse.Reactive.EventBinding temp_eb2;
+    internal global::Fuse.Reactive.EventBinding temp_eb11;
     internal global::Fuse.Controls.Panel year;
     internal global::Fuse.Controls.Panel yearheader;
-    internal global::Fuse.Reactive.EventBinding temp_eb3;
+    internal global::Fuse.Reactive.EventBinding temp_eb12;
     internal global::Fuse.Controls.Panel dropyear;
     internal global::Fuse.Controls.Panel month;
     internal global::Fuse.Controls.Panel monthheader;
-    internal global::Fuse.Reactive.EventBinding temp_eb5;
+    internal global::Fuse.Reactive.EventBinding temp_eb14;
     internal global::Fuse.Controls.Panel dropmonth;
     internal global::Fuse.Controls.Panel date;
     internal global::Fuse.Controls.Panel dateheader;
-    internal global::Fuse.Reactive.EventBinding temp_eb7;
+    internal global::Fuse.Reactive.EventBinding temp_eb16;
     internal global::Fuse.Controls.Panel dropdate;
     internal global::Fuse.Controls.Panel day;
     internal global::Fuse.Controls.Panel dayheader;
-    internal global::Fuse.Reactive.EventBinding temp_eb9;
+    internal global::Fuse.Reactive.EventBinding temp_eb18;
     internal global::Fuse.Controls.Panel dropday;
     internal global::Fuse.Controls.Panel hour;
     internal global::Fuse.Controls.Panel hourheader;
-    internal global::Fuse.Reactive.EventBinding temp_eb11;
+    internal global::Fuse.Reactive.EventBinding temp_eb20;
     internal global::Fuse.Controls.Panel drophour;
     internal global::Fuse.Controls.Panel minute;
     internal global::Fuse.Controls.Panel minuteheader;
-    internal global::Fuse.Reactive.EventBinding temp_eb13;
+    internal global::Fuse.Reactive.EventBinding temp_eb22;
     internal global::Fuse.Controls.Panel dropminute;
     static push()
     {
@@ -380,14 +380,14 @@ public partial class push: Fuse.Controls.Page
         var temp36 = new global::Fuse.Controls.Rectangle();
         var temp37 = new global::Fuse.Reactive.DataBinding(temp_Value_inst, temp13, Fuse.Reactive.BindingMode.Default);
         var temp38 = new global::Fuse.Controls.Button();
-        temp_eb2 = new global::Fuse.Reactive.EventBinding(temp14);
+        temp_eb11 = new global::Fuse.Reactive.EventBinding(temp14);
         var temp39 = new global::Fuse.Controls.BottomBarBackground();
         var temp40 = new global::Fuse.Controls.Grid();
         year = new global::Fuse.Controls.Panel();
         yearheader = new global::Fuse.Controls.Panel();
         var temp41 = new global::Fuse.Controls.StackPanel();
         var temp42 = new global::Fuse.Controls.Button();
-        temp_eb3 = new global::Fuse.Reactive.EventBinding(temp15);
+        temp_eb12 = new global::Fuse.Reactive.EventBinding(temp15);
         var temp43 = new global::Fuse.Navigation.EnteringAnimation();
         var temp44 = new global::Fuse.Animations.Scale();
         var temp45 = new global::Fuse.Controls.StackPanel();
@@ -401,7 +401,7 @@ public partial class push: Fuse.Controls.Page
         monthheader = new global::Fuse.Controls.Panel();
         var temp52 = new global::Fuse.Controls.StackPanel();
         var temp53 = new global::Fuse.Controls.Button();
-        temp_eb5 = new global::Fuse.Reactive.EventBinding(temp18);
+        temp_eb14 = new global::Fuse.Reactive.EventBinding(temp18);
         var temp54 = new global::Fuse.Navigation.EnteringAnimation();
         var temp55 = new global::Fuse.Animations.Scale();
         var temp56 = new global::Fuse.Controls.StackPanel();
@@ -415,7 +415,7 @@ public partial class push: Fuse.Controls.Page
         dateheader = new global::Fuse.Controls.Panel();
         var temp63 = new global::Fuse.Controls.StackPanel();
         var temp64 = new global::Fuse.Controls.Button();
-        temp_eb7 = new global::Fuse.Reactive.EventBinding(temp21);
+        temp_eb16 = new global::Fuse.Reactive.EventBinding(temp21);
         var temp65 = new global::Fuse.Navigation.EnteringAnimation();
         var temp66 = new global::Fuse.Animations.Scale();
         var temp67 = new global::Fuse.Controls.StackPanel();
@@ -430,7 +430,7 @@ public partial class push: Fuse.Controls.Page
         dayheader = new global::Fuse.Controls.Panel();
         var temp75 = new global::Fuse.Controls.StackPanel();
         var temp76 = new global::Fuse.Controls.Button();
-        temp_eb9 = new global::Fuse.Reactive.EventBinding(temp24);
+        temp_eb18 = new global::Fuse.Reactive.EventBinding(temp24);
         var temp77 = new global::Fuse.Navigation.EnteringAnimation();
         var temp78 = new global::Fuse.Animations.Scale();
         var temp79 = new global::Fuse.Controls.StackPanel();
@@ -444,7 +444,7 @@ public partial class push: Fuse.Controls.Page
         hourheader = new global::Fuse.Controls.Panel();
         var temp86 = new global::Fuse.Controls.StackPanel();
         var temp87 = new global::Fuse.Controls.Button();
-        temp_eb11 = new global::Fuse.Reactive.EventBinding(temp27);
+        temp_eb20 = new global::Fuse.Reactive.EventBinding(temp27);
         var temp88 = new global::Fuse.Controls.ScrollView();
         var temp89 = new global::Fuse.Navigation.EnteringAnimation();
         var temp90 = new global::Fuse.Animations.Scale();
@@ -459,7 +459,7 @@ public partial class push: Fuse.Controls.Page
         minuteheader = new global::Fuse.Controls.Panel();
         var temp98 = new global::Fuse.Controls.StackPanel();
         var temp99 = new global::Fuse.Controls.Button();
-        temp_eb13 = new global::Fuse.Reactive.EventBinding(temp30);
+        temp_eb22 = new global::Fuse.Reactive.EventBinding(temp30);
         var temp100 = new global::Fuse.Controls.ScrollView();
         var temp101 = new global::Fuse.Navigation.EnteringAnimation();
         var temp102 = new global::Fuse.Animations.Scale();
@@ -508,8 +508,8 @@ public partial class push: Fuse.Controls.Page
         temp38.Height = new Uno.UX.Size(300f, Uno.UX.Unit.Unspecified);
         temp38.SourceLineNumber = 15;
         temp38.SourceFileName = "Page/push.ux";
-        global::Fuse.Gestures.Clicked.AddHandler(temp38, temp_eb2.OnEvent);
-        temp38.Bindings.Add(temp_eb2);
+        global::Fuse.Gestures.Clicked.AddHandler(temp38, temp_eb11.OnEvent);
+        temp38.Bindings.Add(temp_eb11);
         temp14.SourceLineNumber = 15;
         temp14.SourceFileName = "Page/push.ux";
         temp39.SourceLineNumber = 17;
@@ -536,9 +536,9 @@ public partial class push: Fuse.Controls.Page
         yearheader.Name = __selector5;
         yearheader.SourceLineNumber = 26;
         yearheader.SourceFileName = "Page/push.ux";
-        global::Fuse.Gestures.Clicked.AddHandler(yearheader, temp_eb3.OnEvent);
+        global::Fuse.Gestures.Clicked.AddHandler(yearheader, temp_eb12.OnEvent);
         yearheader.Children.Add(temp41);
-        yearheader.Bindings.Add(temp_eb3);
+        yearheader.Bindings.Add(temp_eb12);
         temp41.SourceLineNumber = 27;
         temp41.SourceFileName = "Page/push.ux";
         temp41.Children.Add(temp42);
@@ -596,9 +596,9 @@ public partial class push: Fuse.Controls.Page
         monthheader.Name = __selector8;
         monthheader.SourceLineNumber = 52;
         monthheader.SourceFileName = "Page/push.ux";
-        global::Fuse.Gestures.Clicked.AddHandler(monthheader, temp_eb5.OnEvent);
+        global::Fuse.Gestures.Clicked.AddHandler(monthheader, temp_eb14.OnEvent);
         monthheader.Children.Add(temp52);
-        monthheader.Bindings.Add(temp_eb5);
+        monthheader.Bindings.Add(temp_eb14);
         temp52.SourceLineNumber = 53;
         temp52.SourceFileName = "Page/push.ux";
         temp52.Children.Add(temp53);
@@ -656,9 +656,9 @@ public partial class push: Fuse.Controls.Page
         dateheader.Name = __selector11;
         dateheader.SourceLineNumber = 78;
         dateheader.SourceFileName = "Page/push.ux";
-        global::Fuse.Gestures.Clicked.AddHandler(dateheader, temp_eb7.OnEvent);
+        global::Fuse.Gestures.Clicked.AddHandler(dateheader, temp_eb16.OnEvent);
         dateheader.Children.Add(temp63);
-        dateheader.Bindings.Add(temp_eb7);
+        dateheader.Bindings.Add(temp_eb16);
         temp63.SourceLineNumber = 79;
         temp63.SourceFileName = "Page/push.ux";
         temp63.Children.Add(temp64);
@@ -725,9 +725,9 @@ public partial class push: Fuse.Controls.Page
         dayheader.Name = __selector14;
         dayheader.SourceLineNumber = 108;
         dayheader.SourceFileName = "Page/push.ux";
-        global::Fuse.Gestures.Clicked.AddHandler(dayheader, temp_eb9.OnEvent);
+        global::Fuse.Gestures.Clicked.AddHandler(dayheader, temp_eb18.OnEvent);
         dayheader.Children.Add(temp75);
-        dayheader.Bindings.Add(temp_eb9);
+        dayheader.Bindings.Add(temp_eb18);
         temp75.SourceLineNumber = 109;
         temp75.SourceFileName = "Page/push.ux";
         temp75.Children.Add(temp76);
@@ -785,9 +785,9 @@ public partial class push: Fuse.Controls.Page
         hourheader.Name = __selector17;
         hourheader.SourceLineNumber = 136;
         hourheader.SourceFileName = "Page/push.ux";
-        global::Fuse.Gestures.Clicked.AddHandler(hourheader, temp_eb11.OnEvent);
+        global::Fuse.Gestures.Clicked.AddHandler(hourheader, temp_eb20.OnEvent);
         hourheader.Children.Add(temp86);
-        hourheader.Bindings.Add(temp_eb11);
+        hourheader.Bindings.Add(temp_eb20);
         temp86.SourceLineNumber = 137;
         temp86.SourceFileName = "Page/push.ux";
         temp86.Children.Add(temp87);
@@ -852,9 +852,9 @@ public partial class push: Fuse.Controls.Page
         minuteheader.Name = __selector20;
         minuteheader.SourceLineNumber = 164;
         minuteheader.SourceFileName = "Page/push.ux";
-        global::Fuse.Gestures.Clicked.AddHandler(minuteheader, temp_eb13.OnEvent);
+        global::Fuse.Gestures.Clicked.AddHandler(minuteheader, temp_eb22.OnEvent);
         minuteheader.Children.Add(temp98);
-        minuteheader.Bindings.Add(temp_eb13);
+        minuteheader.Bindings.Add(temp_eb22);
         temp98.SourceLineNumber = 165;
         temp98.SourceFileName = "Page/push.ux";
         temp98.Children.Add(temp99);

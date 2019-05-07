@@ -3,6 +3,7 @@
   "Packages": [
     "Fuse",
     "FuseJS",
+    "Fuse.PushNotifications",    
     "Fuse.LocalNotifications"
   ],
   "Includes": [

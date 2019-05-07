@@ -1,5 +1,21 @@
 var Observable = require('FuseJS/Observable');
 var LocalNotify = require("FuseJS/LocalNotifications");
+var push = require("FuseJS/Push");
+
+
+push.on("registrationSucceeded", function(regID) {
+    console.log("Reg Succeeded: " + regID);
+});
+
+push.on("error", function(reason) {
+    console.log("Reg Failed: " + reason);
+});
+
+push.on("receivedMessage", function(payload) {
+    console.log("Recieved Push Notification: " + payload);
+});
+
+
 
 
 var Contents = Observable("");

@@ -2,12 +2,11 @@
     <Router ux:Name="router" />
 <!--    	<JavaScript File="./Page/Pushalim.js" />
  -->
-    <Navigator DefaultPath="Pushalim">
+    <Navigator DefaultPath="testpage">
         <push ux:Template="push" router="router" Color="#FFF" />
         <Pushalim ux:Template="Pushalim" router="router" Color="#FFF" Margin="0, 0, 0, 0">
-        	
-            
-
         </Pushalim>
+        <testpage ux:Template="testpage" router="router" Color="#FFF" />
+
     </Navigator>
 </App>

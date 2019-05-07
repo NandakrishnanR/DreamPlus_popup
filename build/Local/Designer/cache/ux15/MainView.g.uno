@@ -42,12 +42,37 @@ public partial class MainView: Fuse.App
         {
             var __self = new global::Pushalim(__parent.router);
             __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Margin = float4(0f, 0f, 0f, 0f);
             __self.Name = __selector0;
             __self.SourceLineNumber = 7;
             __self.SourceFileName = "MainView.ux";
             return __self;
         }
         static global::Uno.UX.Selector __selector0 = "Pushalim";
+    }
+    [Uno.Compiler.UxGenerated]
+    public partial class Template2: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template2(MainView parent, MainView parentInstance): base("testpage", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template2()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::testpage(__parent.router);
+            __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 9;
+            __self.SourceFileName = "MainView.ux";
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "testpage";
     }
     internal global::Fuse.Navigation.Router router;
     internal global::Fuse.Reactive.FuseJS.DiagnosticsImplModule FuseReactiveFuseJSDiagnosticsImplModule;
@@ -59,6 +84,7 @@ public partial class MainView: Fuse.App
     internal global::Fuse.FileSystem.FileSystemModule FuseFileSystemFileSystemModule;
     internal global::Fuse.Storage.StorageModule FuseStorageStorageModule;
     internal global::Fuse.WebSocket.WebSocketClientModule FuseWebSocketWebSocketClientModule;
+    internal global::Fuse.PushNotifications.Push FusePushNotificationsPush;
     internal global::Fuse.LocalNotifications.LocalNotify FuseLocalNotificationsLocalNotify;
     internal global::Polyfills.Window.WindowModule PolyfillsWindowWindowModule;
     internal global::FuseJS.Globals FuseJSGlobals;
@@ -195,6 +221,7 @@ public partial class MainView: Fuse.App
         FuseFileSystemFileSystemModule = new global::Fuse.FileSystem.FileSystemModule();
         FuseStorageStorageModule = new global::Fuse.Storage.StorageModule();
         FuseWebSocketWebSocketClientModule = new global::Fuse.WebSocket.WebSocketClientModule();
+        FusePushNotificationsPush = new global::Fuse.PushNotifications.Push();
         FuseLocalNotificationsLocalNotify = new global::Fuse.LocalNotifications.LocalNotify();
         PolyfillsWindowWindowModule = new global::Polyfills.Window.WindowModule();
         FuseJSGlobals = new global::FuseJS.Globals();
@@ -208,15 +235,17 @@ public partial class MainView: Fuse.App
         var temp = new global::Fuse.Controls.Navigator();
         var push = new Template(this, this);
         var Pushalim = new Template1(this, this);
+        var testpage = new Template2(this, this);
         global::Fuse.Models.ModelJavaScript.SetAppModel(this, "MainView");
         router.Name = __selector0;
         router.SourceLineNumber = 2;
         router.SourceFileName = "MainView.ux";
-        temp.DefaultPath = "Pushalim";
+        temp.DefaultPath = "testpage";
         temp.SourceLineNumber = 5;
         temp.SourceFileName = "MainView.ux";
         temp.Templates.Add(push);
         temp.Templates.Add(Pushalim);
+        temp.Templates.Add(testpage);
         this.Children.Add(router);
         this.Children.Add(temp);
     }

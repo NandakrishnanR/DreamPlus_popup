@@ -55,7 +55,8 @@ Fuse.Models:FuseJS/Internal/zone.js:zone-8fb8d898.js:FuseJS/Internal/ZonePatches
 Fuse.WebSockets
 Polyfills.Window:js/EventTarget.js:eventtarget-c2230a48.js:js/fetch.js:fetch-bb921dd9.js:js/File.js:file-ffac368b.js:js/localStorage.js:localstorage-5815a0c9.js:js/WebSocketAPI.js:websocketapi-2132f288.js:js/Window.js:window-7fb232c1.js:js/WindowBase64.js:windowbase64-3a81b2e2.js:js/WindowTimers.js:windowtimers-6aa3303d.js:js/XMLHttpRequest.js:xmlhttprequest-28ec9821.js
 FuseJS
+Fuse.PushNotifications
 Fuse.LocalNotifications
 Outracks.Simulator.Common.Uno
 Fuse.Preview.Core:fight.png:fight-1537455b.png
-DreamPlus-popup:Page/Pushalim.js:pushalim-d0e3e45e.js:MainView.js:mainview-cb8c4a65.js:Model/Timeset.js:timeset-355bb618.js:Model/Timetable.js:timetable-fe72e98c.js:Page/Pushalim.js:pushalim-d0e3e45e.js:Page/push.js:push-31a83d25.js
+DreamPlus-popup:Page/Pushalim.js:pushalim-d0e3e45e.js:Page/test.js:test-1978f58d.js:MainView.js:mainview-cb8c4a65.js:Model/Timeset.js:timeset-355bb618.js:Model/Timetable.js:timetable-fe72e98c.js:Page/Pushalim.js:pushalim-d0e3e45e.js:Page/push.js:push-31a83d25.js:Page/test.js:test-1978f58d.js
