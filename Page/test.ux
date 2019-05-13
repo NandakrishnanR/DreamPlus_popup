@@ -6,12 +6,19 @@
 
 			<WhileTrue Value="{popup_visible}">
 				<Panel ux:Name="popup" Width="300" Height="200" Background="#909190">
-					
-					<Circle Color="#E6E6E6" Width="20" Height="20" Alignment="TopRight" Margin="0, 0, 0, 0">
+					<!-- 설정 버튼 -->
+					<Image File="../Assets/ok.png" Alignment="TopRight" Margin="0, 5, 6, 0" Width="20" Height="20">
+						<Clicked>
+							<Callback Handler="{settime}" />
+						</Clicked>
+					</Image>
+
+					<Image File="../Assets/back.png" Alignment="TopLeft" Margin="6, 5, 0, 0" Width="20" Height="20" >
 						<Clicked>
 							<Callback Handler="{popoff}" />
 						</Clicked>
-					</Circle>
+					</Image>
+
 					<Rectangle Alignment="HorizontalCenter" Width="270" Height="80" Margin="0, 0, 0, 0" Color="#FEFFFE">
 						<Grid RowCount="1" ColumnCount="5" Height="22" Width="240">
 							<!-- 오전 오후 선택부분 -->					
@@ -24,7 +31,7 @@
 								</Rectangle>
 								<WhileTrue Value="{dateToggle}">
 									<Rectangle Background="#FEFFFE" Alignment="Top" Opacity="0.715" Height="20" />
-									
+
 									<Rectangle Background="#FEFFFE" Alignment="Bottom" Opacity="0.715" Height="20" />
 									<ScrollView Height="80">
 										<StackPanel Alignment="Top" ItemSpacing="10" Margin="0, 30, 0, 0">
@@ -46,9 +53,9 @@
 									</Clicked>
 								</Rectangle>
 							</Panel>
-							
+
 							<Rectangle />
-							
+
 							<!-- 시 선택부분	 -->				
 							<Panel Height="80">
 								<Rectangle Color="#E6E6E6" Margin="0, 0, 0, 40" Height="1">
@@ -80,10 +87,10 @@
 									</Clicked>
 								</Rectangle>
 							</Panel>
-							
-							
+
+
 							<Text Value=":" TextAlignment="Center" Alignment="VerticalCenter" Margin="0, 0, 0, 0" FontSize="20" />
-							
+
 							<!-- 일 선택부분 -->
 							<Panel Height="80">
 								<Rectangle Color="#E6E6E6" Margin="0, 0, 0, 40" Height="1">
@@ -117,7 +124,7 @@
 							</Panel>
 						</Grid>
 					</Rectangle>
-					
+
 				</Panel>			
 			</WhileTrue>
 			<Rectangle Color="#FCFF8E" Width="140" Height="30" Padding="0, 0, 0, 0" Margin="0, 0, 0, 0" Y="100">

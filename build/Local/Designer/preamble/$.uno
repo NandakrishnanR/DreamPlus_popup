@@ -13,7 +13,7 @@ namespace Outracks.Simulator
 		public GeneratedApplication()
 			: base(
 				new [] 
-				{new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("127.0.0.1"), 12124), new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("192.168.35.24"), 12124)},"/Users/jaeyounchae/Documents/fuse/DreamPlus_popup/DreamPlus-popup.unoproj",new string[] 
+				{new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("127.0.0.1"), 12124), new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("10.1.59.155"), 12124)},"/Users/jaeyounchae/Documents/fuse/DreamPlus_popup/DreamPlus-popup.unoproj",new string[] 
 				{ })
 		{
 			Runtime.Bundle.Initialize("DreamPlus-popup");

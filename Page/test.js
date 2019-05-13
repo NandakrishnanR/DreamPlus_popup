@@ -25,9 +25,11 @@ function addZeros(num, digit) { // 자릿수 맞춰주기
 }
 
 // 현재 시간 나타내기
-var hours = addZeros(today.getHours() % 12, 2);
-var minutes = addZeros(today.getMinutes(), 2);
+var hours = today.getHours();
 var ampm = hours >= 12 ? '오후' : '오전';
+hours = hours % 12;
+hours = hours ? hours : 12; 
+var minutes = addZeros(today.getMinutes(), 2);
 var Time = ampm + '  ' + hours + ' : ' + minutes;
 
 
@@ -64,13 +66,20 @@ function popup(){
 	console.log("popup");
 
 }
-function popoff(){
+
+function settime(){
 	popup_visible.value = false;
-	console.log("popoff");
+	console.log("settime");
 	Time = dateInit.value + '  ' + addZeros(hourInit.value, 2) + ' : ' + addZeros(minuteInit.value, 2);
 
 	console.log(Time);
 	timeInit.value = Time;
+
+}
+
+function popoff(){
+	popup_visible.value = false;
+	console.log("popoff");
 
 }
 
@@ -131,5 +140,6 @@ module.exports = {
 	choiceMinute : choiceMinute,
 	popup_visible : popup_visible,
 	popup : popup,
-	popoff : popoff
+	popoff : popoff,
+	settime : settime
 };
