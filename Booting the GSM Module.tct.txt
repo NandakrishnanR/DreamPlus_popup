@@ -1,0 +1,19 @@
+Booting the GSM Module!
+1. Insert the SIM card to GSM module and lock it.
+2. Connect the adapter to GSM module and turn it ON!
+3. Now wait for some time (say 1 minute) and see the blinking rate of ‘status LED’  or ‘network LED’ (GSM module will take some time to establish connection with mobile network)
+4. Once the connection is established successfully, the status/network LED will blink continuously every 3 seconds. You may try making a call to the mobile number of the sim card inside GSM module. If you hear a ring back, the gsm module has successfully established network connection.
+Okay! Now let’s see how to connect a gsm module to Arduino!
+Connecting GSM Module to Arduino
+There are two ways of connecting GSM module to arduino. In any case, the communication between Arduino and GSM module is serial. So we are supposed to use serial pins of Arduino (Rx and Tx). So if you are going with this method, you may connect the Tx pin of GSM module to Rx pin of Arduino and Rx pin of GSM module to Tx pin of Arduino. You read it right ? GSM Tx –> Arduino Rx and GSM Rx –> Arduino Tx. Now connect the ground pin of arduino to ground pin of gsm module! So that’s all! You made 3 connections and the wiring is over! Now you can load different programs to communicate with gsm module and make it work.
+Note:- The problem with this connection is that, while programming Arduino uses serial ports to load program from the Arduino IDE. If these pins are used in wiring,  the program will not be loaded successfully to Arduino. So you have to disconnect wiring in Rx and Tx each time you burn the program to arduino. Once the program is loaded successfully, you can reconnect these pins and have the system working!
+To avoid this difficulty, I am using an alternate method in which two digital pins of arduino are used for serial communication. We need to select two PWM enabled pins of arduino for this method. So I choose pins 9 and 10 (which are PWM enabled pins). This method is made possible with the SoftwareSerial Library of Ardunio. SoftwareSerial is a library of Arduino which enables serial data communication through other digital pins of Arduino. The library replicates hardware functions and handles the task of serial communication.
+I hope you understood so far!  Lets get to the circuit diagram! So given below is the circuit diagram to connect gsm module to arduino – and hence use the circuit to send sms and receive sms using arduino and gsm modem.
+
+Make the connections as shown! Now lets get to the coding part. The program has two objectives as described below:-
+1) Send SMS using Arduino and GSM Module – to a specified mobile number inside the program
+2) Receive SMS using Arduino and GSM Module – to the SIM card loaded in the GSM Module.
+
+
+                                         Bibliography
+This Is a tutorial based procedure which  is derived from circuits today.com
